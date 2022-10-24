@@ -5,7 +5,7 @@ pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tessera
 
 image = cv2.imread('Imagenes\Texto2.jpg')
 text = pytesseract.image_to_string(image,lang='spa')
-print('Texto: ',text)
+print(text)
       
 cv2.imshow('Image',image)
 cv2.waitKey(0)
